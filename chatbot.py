@@ -22,7 +22,7 @@ class Chatbot:
         self.image_model = BlipForConditionalGeneration.from_pretrained(self.image_model_name)
 
         # Search API
-        self.search_api_key = "sk-9e8318fb40194736b4ff6bfe2129642f"  # DeepSeek AI API key
+        self.search_api_key = "GET_YOUR_API_KEY"  # DeepSeek AI API key
 
         # System prompt
         self.system_prompt = (
