@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grok-Lite Chatbot</title>
+    <link rel="stylesheet" href="/static/static.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Chat with <span style="color:#007bff;">Grok-Lite</span></h1>
+        <div id="chatbox"></div>
+
+        <div class="input-area">
+            <input type="text" id="user_input" placeholder="Type or speak your question...">
+            <button onclick="sendMessage()">Send</button>
+            <button id="speakBtn" onclick="startSpeech()">🎤 Speak</button>
+        </div>
+
+        <div class="input-area">
+            <label class="file-label">
+                📄 File
+                <input type="file" id="file_input" accept=".pdf,.txt">
+            </label>
+            <button onclick="uploadFile()">Upload File</button>
+
+            <label class="file-label">
+                🖼️ Image
+                <input type="file" id="image_input" accept="image/*">
+            </label>
+            <button onclick="uploadImage()">Upload Image</button>
+        </div>
+    </div>
+
+    <script src="/static/static.js"></script>
+</body>
+</html>
