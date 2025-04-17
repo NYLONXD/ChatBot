@@ -1,106 +1,106 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0f172a;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
     margin: 0;
-    padding: 20px;
-    color: #e2e8f0;
+    padding: 40px 20px;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #38bdf8;
-    font-weight: 600;
-    margin-bottom: 20px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 28px;
 }
 
 #chatbox {
-    height: 150 px;
+    height: 500px;
     overflow-y: auto;
-    border: 1px solid #334155;
-    padding: 15px;
-    margin-bottom: 20px;
-    background: #0f172a;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    background: #fdfdfd;
+    border-radius: 10px;
+    margin-bottom: 25px;
 }
 
 .user, .bot {
+    margin: 12px 0;
     padding: 10px 14px;
-    max-width: 75%;
     border-radius: 10px;
+    display: inline-block;
+    max-width: 80%;
+    word-wrap: break-word;
     line-height: 1.4;
-    animation: fadeIn 0.3s ease-in-out;
 }
 
 .user {
-    align-self: flex-end;
-    background-color: #2563eb;
-    color: #ffffff;
+    background-color: #e0f0ff;
+    color: #007bff;
     text-align: right;
+    align-self: flex-end;
+    float: right;
+    clear: both;
 }
 
 .bot {
-    align-self: flex-start;
-    background-color: #334155;
-    color: #e2e8f0;
+    background-color: #f1f1f1;
+    color: #333;
     text-align: left;
+    float: left;
+    clear: both;
 }
 
 .input-area {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: space-between;
+    margin-top: 15px;
 }
 
 #user_input {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    flex: 1 1 60%;
-    padding: 10px;
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
     border-radius: 8px;
-    border: 1px solid #475569;
-    background-color: #1e293b;
-    color: white;
-}
-
-#file_input, #image_input {
-    flex: 1 1 15%;
-    min-width: 120px;
-    padding: 8px;
-    background-color: #1e293b;
-    border: 1px solid #475569;
-    border-radius: 8px;
-    color: white;
+    font-size: 16px;
+    min-width: 200px;
 }
 
 button {
     padding: 10px 16px;
-    background: #38bdf8;
-    color: #0f172a;
+    background: #007bff;
+    color: white;
     border: none;
     border-radius: 8px;
-    font-weight: 600;
     cursor: pointer;
     transition: background 0.2s ease;
+    font-size: 15px;
 }
 
 button:hover {
-    background: #0b658f;
+    background: #0056b3;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-    
+.file-label {
+    padding: 10px 16px;
+    background-color: #6c757d;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.file-label input[type="file"] {
+    display: none;
 }
